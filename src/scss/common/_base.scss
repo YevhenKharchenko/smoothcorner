@@ -1,0 +1,70 @@
+:root {
+  font-family: 'Baloo 2', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $_main_bg_color;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+
+.section {
+  scroll-margin-top: 50px;
+
+  @include media(desktop) {
+    scroll-margin-top: 70px;
+  }
+}
+
+.section-title {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 0.93333;
+  text-align: center;
+  color: #693535;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 60px;
+    margin-bottom: 50px;
+  }
+}

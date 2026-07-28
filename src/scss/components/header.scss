@@ -1,0 +1,126 @@
+.header {
+  background: #0b0620;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+  @include media(desktop) {
+  }
+}
+
+.header-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.header-bg-wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.header-container {
+  padding: 0 29px;
+
+  @include media(desktop) {
+    padding: 0 53px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include media(desktop) {
+  }
+}
+
+.header-logo-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+  }
+}
+
+.header-logo-img {
+}
+
+.nav-list {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.nav-list-item {
+}
+
+.nav-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+
+  &:hover,
+  &.active {
+  }
+}
+
+.header-link {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, #392164 0%, #1b0745 100%);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    padding: 13px 52px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    max-width: max-content;
+  }
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.menu-icon {
+  stroke: #000;
+}
