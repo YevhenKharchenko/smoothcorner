@@ -17,25 +17,22 @@
 }
 
 .contact-container {
-  padding: 0 13px;
+  padding: 0;
 
   @include media(desktop) {
-    padding: 0 48px;
   }
 }
 
 .contact-content-wrapper {
-  border-radius: 20px;
-  padding: 18px 28px;
-  background-image: url(../img/contact/contact-bg-mob.png);
+  padding: 42px 25px 159px;
+  background-image: url(../img/contact/contact-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @include media(desktop) {
-    padding: 102px;
-
-    background-image: url(../img/contact/contact-bg-desk.png);
+    padding: 68px 151px 310px;
+    background-image: url(../img/contact/contact-bg-desk.jpg);
   }
 }
 
@@ -45,40 +42,32 @@
 }
 
 .contact-title {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 700;
-  font-size: 30px;
-  text-align: center;
-  color: #180739;
-  margin-bottom: 30px;
+  text-align: left;
 
   @include media(desktop) {
-    font-size: 92px;
-    line-height: 0.88043;
-    margin-bottom: 50px;
   }
 }
 
 .contact-btn {
-  background: linear-gradient(180deg, #392164 0%, #1b0745 100%);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  border-radius: 40px;
-  padding: 12px 43px;
+  box-shadow:
+    0 1px 3px 0 rgba(0, 0, 0, 0.3),
+    0 4px 8px 3px rgba(0, 0, 0, 0.15);
+  background: #ff62a8;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 6px 26px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 600;
   font-size: 14px;
-  color: #fff;
-  width: 100%;
+  text-align: center;
+  color: #fffdfd;
   max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
 
   @include media(desktop) {
-    padding: 18px 79px;
-    font-size: 24px;
-    max-width: max-content;
+    padding: 9px 34px;
+    font-size: 20px;
   }
 }

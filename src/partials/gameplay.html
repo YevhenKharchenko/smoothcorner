@@ -1,144 +1,71 @@
 <section class="gameplay-section section" id="gameplay">
   <div class="gameplay-section-wrapper">
     <div class="container gameplay-container">
-      <h2 class="section-title gameplay-title">How It Works</h2>
-      <ul class="gameplay-list">
-        <li class="gameplay-list-item">
-          <picture>
-            <source
-              srcset="./img/gameplay/gameplay-img1-desk.png"
-              media="(min-width: 1440px)"
-              width="97"
-              height="97"
-            />
-            <source
-              srcset="./img/gameplay/gameplay-img1-desk.png"
-              width="64"
-              height="64"
-            />
-            <img
-              class="gameplay-img"
-              src="./img/gameplay/gameplay-img1-desk.png"
-              alt="Screenshot of the game"
-              width="64"
-              height="64"
-              loading="lazy"
-            />
-          </picture>
-          <h3 class="gameplay-item-title">Match Gems</h3>
-          <p class="gameplay-item-text">
-            Combine three or more elements to clear them from the board.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <picture>
-            <source
-              srcset="./img/gameplay/gameplay-img2-desk.png"
-              media="(min-width: 1440px)"
-              width="97"
-              height="97"
-            />
-            <source
-              srcset="./img/gameplay/gameplay-img2-desk.png"
-              width="64"
-              height="64"
-            />
-            <img
-              class="gameplay-img"
-              src="./img/gameplay/gameplay-img2-desk.png"
-              alt="Screenshot of the game"
-              width="64"
-              height="64"
-              loading="lazy"
-            />
-          </picture>
-          <h3 class="gameplay-item-title">Create Power Moves</h3>
-          <p class="gameplay-item-text">
-            Build larger matches to trigger magical effects.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <picture>
-            <source
-              srcset="./img/gameplay/gameplay-img3-desk.png"
-              media="(min-width: 1440px)"
-              width="97"
-              height="97"
-            />
-            <source
-              srcset="./img/gameplay/gameplay-img3-desk.png"
-              width="64"
-              height="64"
-            />
-            <img
-              class="gameplay-img"
-              src="./img/gameplay/gameplay-img3-desk.png"
-              alt="Screenshot of the game"
-              width="64"
-              height="64"
-              loading="lazy"
-            />
-          </picture>
-          <h3 class="gameplay-item-title">Complete Tasks</h3>
-          <p class="gameplay-item-text">
-            Finish level objectives to progress further.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <picture>
-            <source
-              srcset="./img/gameplay/gameplay-img4-desk.png"
-              media="(min-width: 1440px)"
-              width="97"
-              height="97"
-            />
-            <source
-              srcset="./img/gameplay/gameplay-img4-desk.png"
-              width="64"
-              height="64"
-            />
-            <img
-              class="gameplay-img"
-              src="./img/gameplay/gameplay-img4-desk.png"
-              alt="Screenshot of the game"
-              width="64"
-              height="64"
-              loading="lazy"
-            />
-          </picture>
-          <h3 class="gameplay-item-title">Advance the Journey</h3>
-          <p class="gameplay-item-text">
-            Move through new locations and challenges.
-          </p>
-        </li>
-        <li class="gameplay-list-item">
-          <picture>
-            <source
-              srcset="./img/gameplay/gameplay-img5-desk.png"
-              media="(min-width: 1440px)"
-              width="97"
-              height="97"
-            />
-            <source
-              srcset="./img/gameplay/gameplay-img5-desk.png"
-              width="64"
-              height="64"
-            />
-            <img
-              class="gameplay-img"
-              src="./img/gameplay/gameplay-img5-desk.png"
-              alt="Screenshot of the game"
-              width="64"
-              height="64"
-              loading="lazy"
-            />
-          </picture>
-          <h3 class="gameplay-item-title">Unlock Areas</h3>
-          <p class="gameplay-item-text">
-            Restore parts of the kingdom step by step.
-          </p>
-        </li>
-      </ul>
+      <h2 class="section-title gameplay-title">Merge, unlock, expand</h2>
+      <div class="gameplay-swiper-container">
+        <ul class="swiper-wrapper gameplay-swiper-wrapper">
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">1</p>
+            <h3 class="gameplay-item-title">Combine Items</h3>
+            <p class="gameplay-item-text">
+              Merge identical objects to create higher-level items.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">2</p>
+            <h3 class="gameplay-item-title">Discover New Elements</h3>
+            <p class="gameplay-item-text">
+              Unlock new items through progression.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">3</p>
+            <h3 class="gameplay-item-title">Develop the Town</h3>
+            <p class="gameplay-item-text">
+              Use merged results to upgrade buildings.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">4</p>
+            <h3 class="gameplay-item-title">Complete Tasks</h3>
+            <p class="gameplay-item-text">
+              Follow objectives to guide progression.
+            </p>
+          </li>
+          <li class="swiper-slide gameplay-list-item">
+            <p class="gameplay-item-number">5</p>
+            <h3 class="gameplay-item-title">Expand the Area</h3>
+            <p class="gameplay-item-text">Open new zones and grow your town.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="controls gameplay-controls">
+        <button
+          class="arrow-btn"
+          id="gameplayLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <div class="dots">
+          <div class="gameplay-dot active"></div>
+          <div class="gameplay-dot"></div>
+          <div class="gameplay-dot"></div>
+          <div class="gameplay-dot"></div>
+          <div class="gameplay-dot"></div>
+        </div>
+        <button
+          class="arrow-btn"
+          id="gameplayRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="24" height="24">
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

@@ -4,8 +4,8 @@
 }
 
 .footer-bg-wrapper {
-  padding-top: 28px;
-  padding-bottom: 28px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   @include media(desktop) {
     padding-top: 37px;
@@ -14,7 +14,7 @@
 }
 
 .footer-container {
-  padding: 0 17px;
+  padding: 0 19px;
 
   @include media(desktop) {
     padding: 0 76px;
@@ -54,10 +54,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   font-weight: 600;
   font-size: 14px;
-  color: #fff;
+  color: #693535;
 
   @include media(desktop) {
     font-size: 18px;
@@ -66,11 +66,11 @@
 }
 
 .footer-text {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   font-weight: 600;
   font-size: 14px;
   text-align: center;
-  color: #fff;
+  color: #693535;
 
   @include media(desktop) {
     font-size: 18px;

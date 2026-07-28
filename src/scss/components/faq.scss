@@ -1,0 +1,138 @@
+.faq-section {
+  @include media(desktop) {
+  }
+}
+
+.faq-bg-wrapper {
+  padding-top: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    max-width: 1440px;
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-subtitle {
+  @include media(desktop) {
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.faq-list-item {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 163, 204, 0.3) 0%,
+    rgba(255, 98, 168, 0.3) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 13px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+
+  @include media(desktop) {
+    border-radius: 16px;
+    padding: 20px 25px;
+    max-width: 737px;
+  }
+}
+
+.faq-item-question-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.faq-item-answer-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-toggle-symbol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-icon {
+  min-width: 24px;
+}
+
+.faq-btn-text {
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #693535;
+  text-align: left;
+
+  @include media(desktop) {
+    font-size: 20px;
+  }
+}
+
+.faq-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #693535;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.is-visible {
+  @include media(desktop) {
+    max-height: 100px;
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open .faq-item-answer-wrapper {
+  margin-top: 14px;
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+    margin-top: 25px;
+  }
+}

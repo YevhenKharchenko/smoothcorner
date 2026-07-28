@@ -27,7 +27,7 @@
 }
 
 .features-swiper-container {
-  max-width: 313px;
+  max-width: 227px;
   margin-left: auto;
   margin-right: auto;
 
@@ -46,84 +46,44 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 40px;
     width: 100%;
   }
 }
 
 .features-list-item {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.01) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 14px;
-  padding: 28px;
-  width: 100% !important;
-  max-width: 313px;
   display: flex !important;
   flex-direction: column;
-  min-height: 209px;
-  overflow: hidden;
-
-  &:nth-child(1) {
-    .features-icon-wrapper {
-      background: rgba(77, 150, 255, 0.09);
-      border: 1px solid rgba(77, 150, 255, 0.27);
-    }
-  }
-
-  &:nth-child(2) {
-    .features-icon-wrapper {
-      background: rgba(107, 203, 119, 0.09);
-      border: 1px solid rgba(107, 203, 119, 0.27);
-    }
-  }
-
-  &:nth-child(3) {
-    .features-icon-wrapper {
-      background: rgba(201, 64, 232, 0.09);
-      border: 1px solid rgba(201, 64, 232, 0.27);
-    }
-  }
-
-  &:nth-child(4) {
-    .features-icon-wrapper {
-      background: rgba(248, 176, 30, 0.09);
-      border: 1px solid rgba(248, 176, 30, 0.27);
-    }
-  }
+  width: 100% !important;
+  max-width: 227px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    min-height: 220px;
+    min-height: 242px;
+    margin: 0;
   }
 }
 
-.features-icon-wrapper {
-  border-radius: 20px;
-  min-width: 56px;
-  height: 56px;
-  max-width: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
+.features-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 
   @include media(desktop) {
   }
 }
 
 .features-item-title {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
   font-size: 16px;
-  color: #f0e8ff;
+  text-align: center;
+  color: #693535;
   margin-bottom: 10px;
 
   @include media(desktop) {
     font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -131,16 +91,17 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  text-align: center;
+  color: #693535;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 .features-dot {
   border-radius: 100%;
-  background: #392164;
+  background: rgba(105, 53, 53, 0.3);
   width: 4px;
   height: 4px;
   transition: transform 0.3s ease-in-out;
@@ -149,6 +110,6 @@
 }
 
 .features-dot.active {
-  background: #392164;
+  background: #693535;
   transform: scale(1.3);
 }

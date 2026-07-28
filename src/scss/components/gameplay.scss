@@ -26,61 +26,78 @@
   }
 }
 
-.gameplay-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.gameplay-swiper-container {
+  max-width: 227px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
+    max-width: 100%;
+  }
+}
+
+.gameplay-swiper-container.show {
+  visibility: visible;
+}
+
+.gameplay-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    gap: 30px;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
   }
 }
 
 .gameplay-list-item {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.01) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 16px;
-  padding: 23px 17px;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
-  max-width: 303px;
+  width: 100% !important;
+  max-width: 227px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    padding: 28px 28px 23px;
-    max-width: 345px;
     margin: 0;
   }
 }
 
-.gameplay-img {
+.gameplay-item-number {
+  background: linear-gradient(135deg, #ffa3cc 0%, #ff62a8 100%);
+  border: 1px solid #693535;
+  border-radius: 45px;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 0.93333;
+  text-align: center;
+  color: #693535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 65px;
+  width: 65px;
+  height: 65px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @include media(desktop) {
   }
 }
 
 .gameplay-item-title {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
   font-size: 16px;
-  color: #f0e8ff;
+  text-align: center;
+  color: #693535;
   margin-bottom: 10px;
 
   @include media(desktop) {
     font-size: 20px;
-    line-height: 1.2;
   }
 }
 
@@ -88,9 +105,91 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  text-align: center;
+  color: #693535;
 
   @include media(desktop) {
-    font-size: 18px;
+    font-size: 16px;
   }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  margin-top: 20px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.arrow-btn {
+  background: #693535;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 30px;
+  width: 30px;
+  height: 30px;
+  transition:
+    transform 0.3s ease-in-out,
+    background 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
+
+  &:active {
+  }
+
+  @include media(desktop) {
+    &:hover {
+    }
+  }
+
+  &[disabled] {
+    background: transparent;
+    border-color: #693535;
+    cursor: not-allowed;
+
+    .arrow-icon {
+      stroke: #693535;
+    }
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.arrow-icon {
+  stroke: #fff;
+  fill: none;
+  transition: stroke 0.3s ease-in-out;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-dot {
+  border-radius: 100%;
+  background: rgba(105, 53, 53, 0.3);
+  width: 4px;
+  height: 4px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.gameplay-dot.active {
+  background: #693535;
+  transform: scale(1.3);
 }

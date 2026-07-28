@@ -16,10 +16,10 @@
 }
 
 .about-container {
-  padding: 0;
+  padding: 0 16px;
 
   @include media(desktop) {
-    padding: 0 90px;
+    padding: 0 73px;
   }
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 
   @include media(desktop) {
     flex-direction: row;
@@ -37,11 +37,8 @@
 }
 
 .about-text-wrapper {
-  padding: 0 25px;
-
   @include media(desktop) {
-    padding: 0;
-    max-width: 657px;
+    max-width: 688px;
   }
 }
 
@@ -56,25 +53,19 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #693535;
 
   @include media(desktop) {
     font-size: 20px;
-    max-width: 637px;
   }
 }
 
 .about-img {
-  box-shadow:
-    0 1px 3px 0 rgba(0, 0, 0, 0.3),
-    0 4px 8px 3px rgba(0, 0, 0, 0.15);
-  border-radius: 48px;
-  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
-    min-width: 573px;
+    min-width: 536px;
     margin: 0;
   }
 }

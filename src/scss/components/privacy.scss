@@ -1,5 +1,5 @@
 .policy-section {
-  background: #0b0620;
+  background: #fcf9fe;
   padding-top: 100px;
   padding-bottom: 80px;
 
@@ -10,11 +10,11 @@
 }
 
 .policy-section h1 {
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 700;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
   font-size: 30px;
   text-align: center;
-  color: #fff;
+  color: #693535;
   margin-bottom: 30px;
 
   @include media(desktop) {
@@ -27,7 +27,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #fff;
+  color: #693535;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -39,7 +39,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #fff;
+  color: #693535;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -51,7 +51,19 @@
   font-family: 'Inter', sans-serif;
   font-weight: 800;
   font-size: 16px;
-  color: #fff;
+  color: #693535;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 30px;
+  }
+}
+
+.policy-section h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #693535;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -63,18 +75,19 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #693535;
   margin-bottom: 16px;
 
   @include media(desktop) {
     font-size: 24px;
   }
 }
+
 .policy-section li {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #693535;
   margin-bottom: 16px;
 
   @include media(desktop) {

@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://brightorbit.space/sitemap.xml
+Sitemap: https://smoothcorner.online/sitemap.xml

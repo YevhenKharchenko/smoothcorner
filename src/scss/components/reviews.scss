@@ -18,6 +18,7 @@
 
 .reviews-container {
   @include media(desktop) {
+    padding: 0 45px;
   }
 }
 
@@ -27,7 +28,7 @@
 }
 
 .reviews-swiper-container {
-  max-width: 269px;
+  max-width: 345px;
   margin-left: auto;
   margin-right: auto;
 
@@ -56,21 +57,29 @@
 .reviews-list-item {
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.01) 100%
+    rgba(255, 163, 204, 0.3) 0%,
+    rgba(255, 98, 168, 0.3) 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 16px;
-  padding: 28px 19px 38px;
+  padding: 28px;
   width: 100% !important;
-  max-width: 269px;
-  min-height: 178px;
+  max-width: 345px;
+  min-height: 200px;
   display: flex !important;
   flex-direction: column;
 
   @include media(desktop) {
-    max-width: 345px;
-    min-height: 187px;
+    max-width: 430px;
+    min-height: 218px;
+  }
+}
+
+.reviews-item-break {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
   }
 }
 
@@ -85,11 +94,11 @@
 }
 
 .reviews-item-name {
-  font-family: 'Fredoka', sans-serif;
+  font-family: 'Baloo 2', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #f0e8ff;
+  color: #693535;
   margin-bottom: 10px;
 
   @include media(desktop) {
@@ -102,7 +111,7 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #fff;
+  color: #693535;
 
   @include media(desktop) {
     font-size: 18px;
@@ -111,7 +120,7 @@
 
 .reviews-dot {
   border-radius: 100%;
-  background: #392164;
+  background: rgba(105, 53, 53, 0.3);
   width: 4px;
   height: 4px;
   transition: transform 0.3s ease-in-out;
@@ -120,6 +129,6 @@
 }
 
 .reviews-dot.active {
-  background: #392164;
+  background: #693535;
   transform: scale(1.3);
 }
