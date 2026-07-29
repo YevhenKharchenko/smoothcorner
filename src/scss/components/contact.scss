@@ -4,35 +4,31 @@
 }
 
 .contact-bg-wrapper {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  max-width: 375px;
+  padding-top: 42px;
+  padding-bottom: 159px;
   margin: 0 auto;
-
-  @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    max-width: 1440px;
-  }
-}
-
-.contact-container {
-  padding: 0;
-
-  @include media(desktop) {
-  }
-}
-
-.contact-content-wrapper {
-  padding: 42px 25px 159px;
   background-image: url(../img/contact/contact-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
   @include media(desktop) {
-    padding: 68px 151px 310px;
+    padding-top: 68px;
+    padding-bottom: 310px;
     background-image: url(../img/contact/contact-bg-desk.jpg);
+  }
+}
+
+.contact-container {
+  padding: 0 25px;
+
+  @include media(desktop) {
+    padding: 0 151px;
+  }
+}
+
+.contact-content-wrapper {
+  @include media(desktop) {
   }
 }
 

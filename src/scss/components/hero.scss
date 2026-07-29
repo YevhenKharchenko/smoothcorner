@@ -6,7 +6,6 @@
 .hero-bg-wrapper {
   padding-top: 335px;
   padding-bottom: 335px;
-  max-width: 375px;
   margin: 0 auto;
   background-image:
     url(../img/hero/hero-bg-mob.png), url(../img/hero/hero-bg-mob.jpg);
@@ -19,14 +18,13 @@
   @include media(desktop) {
     padding-top: 383px;
     padding-bottom: 307px;
-    max-width: 1440px;
     background-image:
       url(../img/hero/hero-bg-desk.png), url(../img/hero/hero-bg-desk.jpg);
 
     background-position:
       center center,
       bottom center;
-    background-size: auto, auto;
+    background-size: auto, cover;
   }
 }
 
